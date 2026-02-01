@@ -1,5 +1,5 @@
-:root.theme-dark {
-  --bg-image: url('../images/cover-image-dark.png');
+:root {
+   --bg-image: url('../images/cover-image-dark.png');
   --header_title_text: #000028;
   --accent-color: #FF0070;
   --main_title_color: #DB00FF;
@@ -7,4 +7,29 @@
   --border-color: rgb(255, 0, 122);
   --rec-color: #FF0070;
   --description-text: #F1B2CE;
+  --hover-color: rgb(255, 0, 112 , 0.4);
+   --display-icon: flex;
+}
+
+.decorative-icon-zone {
+  display: var(--display-icon);
+  flex-direction: row;
+  color: var(--rec-color);
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'IBM Plex mono', sans-serif;
+  
+}
+
+.decorative-icon-zone::after {
+  content:"";
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px;
+  background-color: var(--rec-color);
+  inline-size: 9px;
+  block-size: 9px;
+  margin-left: 10px;
+  padding: 5px 0 0 10px;
 }

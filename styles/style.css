@@ -72,7 +72,6 @@ header {
 
 .decorative-icon-zone {
   position: absolute;
-  display: flex;
   flex-direction: row;
   line-height: 25px;
 }
@@ -143,7 +142,7 @@ footer {
 }
 
 @media (min-width: 375px) {
-  .decorative-icon-zone {
+  .decorative-icon-zone{
     top: 0px;
     width: 52px;
     right: 27px;
