@@ -17,13 +17,12 @@
   --menu-button-color: #FF0070;
   --border-color: rgb(255, 0, 122);
   --rec-color: #FF0070;
-  --display-rec: flex;
   --description-text: #F1B2CE;
   --hover-color: rgb(255, 0, 112 , 0.4);
 }
 
 .decorative-rec-icon {
-  display: var(--display-rec);
+  display: flex;
   color: var(--rec-color);
   padding-top: 10px;
   align-items: center;
