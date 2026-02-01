@@ -72,7 +72,7 @@ header {
 
 .decorative-icon-zone {
   position: absolute;
-  display: var(--display-rec);
+  display: flex;
   flex-direction: row;
   top: 0px;
   width: 52px;
