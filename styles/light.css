@@ -28,7 +28,7 @@
   --hover-color: rgb(50, 49, 45 , 0.4);
 }
 
-.decorative-icon-zone{
+.decorative-icon-zone {
   display: var(--display-icon);
 }
 }
