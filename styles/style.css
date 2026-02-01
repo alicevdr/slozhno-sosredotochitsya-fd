@@ -15,7 +15,7 @@ body {
 .page {
   background-image: var(--bg-image);
   background-size: cover;
-  background-image: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -288,6 +288,7 @@ footer {
   footer {
     display: flex;
     min-height: 668px;
+    padding: 10px 0;
   }
 
   .footer_title {
@@ -295,7 +296,7 @@ footer {
   }
 
   .decorative-rec-icon::after {
-    margin-left: 12px;
+    margin-left: 10px;
   }
 
   .decorated-zone::before {
@@ -322,13 +323,12 @@ footer {
 
   footer::before {
     inset-inline-end: 10px;
-    margin-top: 10px;
     border-block-start: 1px solid var(--menu-button-color);
     border-inline-end: 1px solid var(--menu-button-color);
   }
 
   footer::after {
-    margin-top: 650px;
+    margin-top: 622px;
     border-block-end: 1px solid var(--menu-button-color);
     border-inline-start: 1px solid var(--menu-button-color);
   }
@@ -407,7 +407,6 @@ footer {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-start: auto;
     height: fit-content;
   }
 
@@ -546,6 +545,8 @@ footer {
     justify-self: start;
     align-self: start;
     margin-top: 275px;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 
   .header__theme-menu {
@@ -557,11 +558,6 @@ footer {
 
   .contemt {
     padding: 0 20px;
-  }
-
-  .main-title {
-    grid-column-start: 1;
-    grid-column-end: 5;
   }
 
   .header_article {
@@ -719,8 +715,8 @@ a:hover {
   border-bottom: 1px solid var(--menu-button-color);
 }
 
-.header__theme-menu-button:focus-visible       {
-    outline: none;
+.header__theme-menu-button:focus-visible {
+  outline: none;
   border-bottom: 1px solid var(--menu-button-color);
 }
 
