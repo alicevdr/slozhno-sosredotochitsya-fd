@@ -74,12 +74,7 @@ header {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 0px;
-  width: 52px;
-  right: 27px;
   line-height: 25px;
-  gap: 10px;
-  justify-content: space-between;
 }
 
 .decorated-zone::before,
