@@ -255,7 +255,9 @@ footer::after {
     padding-bottom: 20px;
   }
 
-  .section-title, .what_section_description, .main-section_title {
+  .section-title,
+  .what_section_description,
+  .main-section_title {
     margin: 0;
   }
 
