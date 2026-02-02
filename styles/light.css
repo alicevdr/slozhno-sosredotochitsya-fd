@@ -2,7 +2,9 @@
 
 :root.theme-light {
   --bg-image: url('../images/cover-image-light.png');
+  --bg-color: #fff1f7;
   --header_title_text: #353430;
+  --common-text-color:  #353430;
   --accent-color: #FF8DCB;
   --main_title_color: #FFC2E6;
   --border-color: #353430;

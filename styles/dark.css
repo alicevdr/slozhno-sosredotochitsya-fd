@@ -2,6 +2,8 @@
 
 :root.theme-dark {
   --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
+  --header_title_text: #000028;
   --accent-color: #FF0070;
   --main_title_color: #DB00FF;
   --menu-button-color: #FF0070;
@@ -31,6 +33,26 @@
   background-color: var(--rec-color);
   inline-size: 9px;
   block-size: 9px;
+  margin-top: 5px;
   margin-left: 10px;
   padding: 5px 0 0 10px;
+}
+
+@media (min-width: 375px) {
+  .decorative-icon-zone::after {
+ margin-top: 2px; 
+  }
+}
+
+
+@media (min-width: 768px) {
+  .decorative-icon-zone::after {
+ margin-top: 10px; 
+  }
+}
+
+@media (min-width:1024px) {
+  .decorative-icon-zone::after {
+ margin-top: 10px; 
+  }
 }
