@@ -1,5 +1,6 @@
 :root {
-   --bg-image: url('../images/cover-image-dark.png');
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
   --header_title_text: #000028;
   --accent-color: #FF0070;
   --main_title_color: #DB00FF;

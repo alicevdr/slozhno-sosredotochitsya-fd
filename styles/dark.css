@@ -31,13 +31,20 @@
   inline-size: 9px;
   block-size: 9px;
   margin-top: 5px;
-  margin-left: 10px;
   padding: 5px 0 0 10px;
 }
+
+.page {
+  background-color: var(--bg-color);
+}
+
 
 @media (min-width: 375px) {
   .decorative-icon-zone::after {
     margin-top: 2px;
+     width: 52px;
+    right: 27px;
+    margin-left: 10px;
   }
 }
 
@@ -48,6 +55,10 @@
 }
 
 @media (min-width: 1024px) {
+  .decorative-icon-zone {
+    margin-right: 2px;
+  }
+  
   .decorative-icon-zone::after {
     margin-top: 10px;
   }
