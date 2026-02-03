@@ -206,6 +206,11 @@ a:focus-visible {
 
   header {
     height: calc(100vh - 20px);
+    display: grid;
+    justify-self: end;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 60px;
   }
 
   .decorated-zone::before {
@@ -221,15 +226,6 @@ a:focus-visible {
   body {
     max-height: 668px;
   }
-
-  header {
-    display: grid;
-    justify-self: end;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 60px;
-  }
-
   .header__theme-menu {
     flex-direction: column;
   }
@@ -451,10 +447,6 @@ a:focus-visible {
 }
 
 @media (min-width: 1024px) {
-  .section-title {
-    letter-spacing: -0.5px;
-  }
-
   .header__theme-menu-list {
     flex-direction: row;
     align-items: start;
@@ -497,6 +489,7 @@ a:focus-visible {
 
   .reason-section {
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -510,7 +503,7 @@ a:focus-visible {
   }
 
   .advices-title {
-    word-spacing: -2.5px;
+    word-spacing: 3px;
   }
 
   .how-section {
