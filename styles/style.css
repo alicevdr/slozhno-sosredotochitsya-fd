@@ -82,18 +82,16 @@ header {
   line-height: 25px;
 }
 
+.decorated-zone {
+  position: relative;
+}
+
 .decorated-zone::before,
-footer::before,
-.decorated-zone::after,
-footer::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-}
-
-.decorated-zone {
-  position: relative;
 }
 
 .header__theme-menu {
@@ -106,8 +104,7 @@ footer::after {
   font-size: 18px;
 }
 
-.medium-section-title,
-.advices-title {
+.medium-section-title {
   font-family: "IBM Plex mono", sans-serif;
   color: var(--header_title_text);
   background-color: var(--accent-color);
@@ -154,14 +151,12 @@ footer {
   margin: auto;
 }
 
-.decorated-zone::before,
-footer::before {
+.decorated-zone::before {
   border-block-start: 1px solid var(--menu-button-color);
   border-inline-end: 1px solid var(--menu-button-color);
 }
 
-header::after,
-footer::after {
+.decorated-zone::after {
   border-block-end: 1px solid var(--menu-button-color);
   border-inline-start: 1px solid var(--menu-button-color);
 }
@@ -218,14 +213,11 @@ a:focus-visible {
     inset-inline-end: 10px;
   }
 
-  .decorated-zone::after {
+  header::after {
     inset-inline-start: 10px;
     inset-block-end: -10px;
   }
 
-  body {
-    max-height: 668px;
-  }
   .header__theme-menu {
     flex-direction: column;
   }
@@ -289,10 +281,6 @@ a:focus-visible {
     padding: 10px 10px;
   }
 
-  footer::before {
-    inset-inline-end: 10px;
-  }
-
   footer::after {
     margin-top: 622px;
   }
@@ -339,8 +327,7 @@ a:focus-visible {
     margin: 161px 0 163px;
   }
 
-  .concentrate_content_section,
-  .how_content_section {
+  .uni_section_class {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -417,8 +404,8 @@ a:focus-visible {
     padding: 0 20px;
   }
 
-  footer::before {
-    margin-top: 20px;
+  .decorated-zone::before {
+    inset-block-start: 20px;
     inset-inline-end: 20px;
   }
 
@@ -435,12 +422,7 @@ a:focus-visible {
     margin-left: 9px;
   }
 
-  .decorated-zone::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
-  }
-
-  .decorated-zone::after {
+  header::after {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
@@ -479,7 +461,6 @@ a:focus-visible {
   }
 
   .uni_section_class {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -518,11 +499,6 @@ a:focus-visible {
 
   footer {
     min-height: 768px;
-  }
-
-  footer::before {
-    margin-top: 20px;
-    inset-inline-end: 20px;
   }
 
   footer::after {
